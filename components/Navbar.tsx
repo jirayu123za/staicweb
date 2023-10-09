@@ -13,7 +13,7 @@ const Navbar = () => {
                 <Link href="/">
                     <Image
                         src="/logo.svg"
-                        width={115}
+                        width={180}
                         height={43}
                         alt="Flexible"
                     />
