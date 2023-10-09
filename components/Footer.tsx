@@ -21,18 +21,6 @@ const Footer = () => {
     return (
         <footer className="flexStart footer">
             <div className="flex flex-col gap-12 w-full">
-                <div className='flex items-start flex-col'>
-                    <Image
-                        src="/logo-purple.svg"
-                        width={115}
-                        height={38}
-                        alt='Flexible'
-                    />
-
-                    <p className='text-start text-sm font-normal mt-5 max-w-xs'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dolore est, tempore, quisquam explicabo, totam ex quidem voluptatum iste atque eos facere aperiam iure vitae quia mollitia? Molestias, sunt possimus.
-                    </p>
-                </div>
                 <div className='flex flex-wrap gap-12'>
                     <FooterColumn title={footerLinks[0].title} 
                         links={footerLinks[0].links}/>
