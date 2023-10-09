@@ -23,14 +23,15 @@ const AuthProviders = () => {
             console.log(res);
             setProviders(res);
         }
+        fetchProviders();
     },[]);
 
     if(providers) {
         return (
             <div>
                 {Object.values(providers)
-                    .map((provider: Provider, index) => (
-                    <button key={index} onClick={() => signIn(provider?.id)}>{provider.id}</button>
+                    .map((provider: Provider, i) => (
+                    <button key={i} onClick={() => signIn(provider?.id)}>{provider.id}</button>
                 ))}
             </div>
         )
