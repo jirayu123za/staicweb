@@ -13,7 +13,7 @@ export const authOptions: NextAuthOptions = {
         providers: [
             GoogleProvider({
                 clientId: process.env.GOOGLE_CLIENT_ID!,
-                clientSecret: process.env.GOOGLE_CLIENT_SECRET!
+                clientSecret: process.env.GOOGLE_CLIENT_SECRET_ID!,
         })
     ],
     jwt: {
@@ -34,7 +34,7 @@ export const authOptions: NextAuthOptions = {
     },
     theme: {
         colorScheme: 'light',
-        logo: '/logo.png',
+        logo: '/logo.svg',
     },
     callbacks: {
         async session({ session }) {
